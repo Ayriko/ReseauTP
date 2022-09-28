@@ -136,20 +136,8 @@ On teste les pings et on observe que cela fonctionne désormais.
 
 On peut vérifier si les règles ont bien été créées avec par exemple: `netsh advfirewall firewall show rule name="ICMP Allow incoming V4 echo request"`
 Ce qui nous donne :
-                Nom de la règle :                     ICMP Allow incoming V4 echo request
-                ----------------------------------------------------------------------
-                Activé :                              Oui
-                Direction :                           Actif
-                Profiles :                            Domaine,Privé,Public
-                Groupement :
-                LocalIP :                             Tout
-                RemoteIP :                            Tout
-                Protocole :                           ICMPv4
-                                                      Type    Code
-                                                      8       Tout
-                Traversée latérale :                  Non
-                Action :                              Autoriser
-                Ok.
+
+![image](verifregle.PNG)
 
 Pour ouvrir le port 8888 qu'on utilise pour netcat, il suffit d'utiliser une commande plus ou moins similaire à la précédente, avec celle qui suit :
 
