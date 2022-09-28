@@ -105,6 +105,7 @@ observer qu'il écoute sur n'importe quelle IP tant qu'elle passe par le port 88
         -> `netstat -a -b -n | select-string 8888`
 
 TCP    0.0.0.0:8888           0.0.0.0:0              LISTENING
+
  [nc64.exe]
 
 Pour s'y connecter, il suffit de faire la commande suivante : 
@@ -120,6 +121,7 @@ Celui qui possède le serveur peut également préciser son IP d'un de ses rése
 Comme avant avec netstat, on voit à peu près la même chose à l'exception de l'IP précisé avant le port.
 
 TCP    192.168.137.2:8888     0.0.0.0:0              LISTENING
+
  [nc64.exe]
 
 ### 6. Firewall
