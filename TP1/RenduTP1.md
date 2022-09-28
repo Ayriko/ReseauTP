@@ -38,7 +38,7 @@ Aymeric MOISKA
 On se rend dans le Centre de réseau et partage dans l'onglet Réseau et Internet du panneau de configuration Windows.
 Depuis là on peut ouvrir notre type de connexion actuel et afficher ses détails.
 
-![image](detailwifi.PNG)
+![image](screenshots/detailwifi.PNG)
 
 #### Questions
 
@@ -51,7 +51,7 @@ La passerelle, un routeur, permet aux membres du réseau d'Ynov de communiquer a
 #### A. Modification d'adresse IP (partie 1)
 Utilisez l'interface graphique de votre OS pour changer d'adresse IP :
 
-![image](changementIP.PNG)
+![image](screenshots/changementIP.PNG)
 
 J'ai bien perdu Internet lors de la manipulation. Il est possible de perdre l'accès car nous avons potentiellement choisi une adresse
 déjà utilisé par un autre client du réseau et ce client, ayant eu cette adresse IP en premier, est prioritaire avec. Ainsi on ne reçoit rien
@@ -87,12 +87,12 @@ Par la suite, si on récupère les données de la table ARP via la console avec 
 
 J'ai donc activé le partage de ma connexion internet wifi via l'onglet suivant :
 
-![image](sharinginternet.PNG)
+![image](screenshots/sharinginternet.PNG)
 
 Ce qui a d'ailleurs changé mon adresse IP précedemment choisi pour l'ethernet, nous sommes désormais en 192.168.137.1 et .2
 Celui avec le wifi coupé a donc tenté de ping 1.1.1.1 et 8.8.8.8, j'ai pu voir que ça fonctionné à travers Wireshark et donc qu'il pouvait utiliser ma connexion à internet.
 
-![image](ping8.8.PNG)
+![image](screenshots/ping8.8.PNG)
 
 ### 5. Petit chat privé
 
@@ -112,7 +112,7 @@ Pour s'y connecter, il suffit de faire la commande suivante :
         `.\nc.exe 192.168.137.2 8888` 
 et on peut maintenant discuter. 
 
-![image](netcat.PNG)
+![image](screenshots/netcat.PNG)
 
 Celui qui possède le serveur peut également préciser son IP d'un de ses réseaux, celle-ci a pour effet de restreindre le "LISTENING" du serveur a ce réseau. Ici ça revient à autoriser les connexions au netcat uniquement aux IPs partageant notre réseau ethernet.
 
@@ -137,7 +137,7 @@ On teste les pings et on observe que cela fonctionne désormais.
 On peut vérifier si les règles ont bien été créées avec par exemple: `netsh advfirewall firewall show rule name="ICMP Allow incoming V4 echo request"`
 Ce qui nous donne :
 
-![image](verifregle.PNG)
+![image](screenshots/verifregle.PNG)
 
 Pour ouvrir le port 8888 qu'on utilise pour netcat, il suffit d'utiliser une commande plus ou moins similaire à la précédente, avec celle qui suit :
 
@@ -214,12 +214,12 @@ Si le serveur DNS est capable d'associer un nom de domaine à l'ip qu'on lui fou
 
 Ping entre la passerelle et moi :
 
-![image](pingshark.PNG)
+![image](screenshots/pingshark.PNG)
 
 Trame de netcat : 
 
-![image](netcatshark.PNG)
+![image](screenshots/netcatshark.PNG)
 
 Trame d'une requête DNS :
 
-![image](testdns.PNG)
+![image](screenshots/testdns.PNG)
