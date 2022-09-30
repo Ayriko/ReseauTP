@@ -138,5 +138,5 @@ Identifiez dans ces 4 trames les informations 1, 2 et 3 dont on a parlé juste a
 
 [Trames UDP, request et reply lors d'une vidéo youtube](wireshark/ytb.pcapng)  
 Au moment où on lance une vidéo youtube, wireshark observe un immense paquet de trames UDP presque instantanément.   
-On constate que notre PC se connecte en destination à une ipv6 (première ligne), en regardant les détails on voit qu'elle est lié à SFR, mon opérateur -> SFR_52:e7:10(60:35:c0:52:e7:10)  
+On constate que notre PC se connecte en destination à une MAC (première ligne), en regardant les détails on voit qu'elle est lié à SFR, mon opérateur -> SFR_52:e7:10(60:35:c0:52:e7:10)  
 On voit aussi qu'on se connecte via le port 443, représantant les connexions au trafic web sécurisé (https)
